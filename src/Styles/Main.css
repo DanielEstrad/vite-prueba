@@ -1,0 +1,17 @@
+:root {
+    --bg-dark-color: #202020;
+    --bg-light-color: #fffeee;
+    --text-dark-color: white;
+}
+
+body {
+    margin: 0;
+    /* padding: 2vh 1.5vw; */
+    background-color: var(--bg-dark-color);
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    color: var(--text-dark-color);
+    position: relative;
+}
