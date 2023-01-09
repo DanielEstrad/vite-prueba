@@ -1,25 +1,13 @@
 nav {
-    display: flex;
-    height: 7vh;
-    width: 100%;
-    background-color: gray;
-    border-radius: 7.5px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10%;
-    box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  height: var(--navbar-height);
 }
 
-nav > img {
-    height: 100%;
-}
-
-nav > ol {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-}
-
-nav > ol > li {
-    margin-right: 20px;
+.social-media-icon {
+  width: 25px;
+  height: 25px;
+  color: white;
 }

@@ -1,0 +1,129 @@
+main {
+  display: grid;
+  gap: var(--navbar-height);
+}
+
+.hero-content {
+  background-image: url("../images/wave.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center, 50%, 50%;
+  height: calc(100vh - var(--navbar-height));
+  grid-template-rows: 2fr 8fr;
+  justify-items: center;
+  align-items: end;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+.hero-content,
+.technologies-reference,
+.technologie-skill {
+  display: grid;
+}
+
+.hero-content__text > h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.hero-content__text > p {
+  color: var(--font-seconday-color);
+  width: 100%;
+  height: 100%;
+  font-size: 1.25rem;
+}
+
+.hero-content__person {
+  align-self: end;
+  height: 80%;
+}
+
+.technologies-reference {
+  --padding-technologies: 0.825rem;
+  margin: 0 1rem;
+  color: var(--font-seconday-color);
+  gap: 2rem;
+  text-align: center;
+  position: relative;
+  padding-left: calc(var(--padding-technologies) + 10px);
+}
+
+h2 {
+  color: var(--font-main-color);
+  font-weight: 400;
+  letter-spacing: 5px;
+  font-size: 2rem;
+}
+
+.technologies-reference > p {
+  color: #99aaa0;
+}
+
+.technologies-reference__images {
+  display: grid;
+  height: 80px;
+  grid-auto-flow: column;
+  justify-items: center;
+}
+
+.technologies-reference__images > img {
+  height: 100%;
+}
+
+.technologie-skill {
+  grid-template: 2fr 8fr / repeat(3, 1fr);
+  padding: 0 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.technologie-skill > h2 {
+  grid-column: 1 / 4;
+}
+
+.tecnologie-skill__card {
+  height: 400px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 5px 0px 50px 5px;
+  padding: 4rem 3rem;
+  box-shadow: 0px 0px 50px 10px hsl(240, 1%, 36%, 0.1);
+  position: relative;
+}
+
+.tecnologie-skill__card:nth-child(2) {
+  justify-self: end;
+}
+
+.tecnologie-skill__card:nth-child(4) {
+  justify-self: start;
+}
+
+.tecnologie-skill__card:nth-child(3) {
+  background-color: #718af4;
+  color: var(--bg-very-dark);
+}
+
+.tecnologie-skill__card:nth-child(3)::before {
+  background-color: #f4d8c1;
+}
+
+.tecnologie-skill__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 3px;
+  background-color: #718af4;
+}
+
+.tecnologie-skill__card > h3 {
+  font-weight: 400;
+  font-size: 2rem;
+}

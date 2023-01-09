@@ -1,16 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Home from "./Pages/Home";
-import { Navbar } from "./Layouts/Navbar";
-import { Footer } from "./Layouts/Footer";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
 import "./Styles/Main.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Navbar>
-      <Footer>
-        <Home />
-      </Footer>
-    </Navbar>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
