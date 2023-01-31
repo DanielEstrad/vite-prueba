@@ -26,17 +26,19 @@ function Home() {
       </section>
       <section className="technologie-skill">
         <h2>Especializado en</h2>
-        <div className="tecnologie-skill__card">
-          <h3>Mejores prácticas</h3>
-          <p>Prácticas estandarizadas para el desarrollo de software.</p>
-        </div>
-        <div className="tecnologie-skill__card">
-          <h3>Diseño adaptativo</h3>
-          <p>A</p>
-        </div>
-        <div className="tecnologie-skill__card">
-          <h3>Desarrollo estandarizado</h3>
-          <p>E</p>
+        <div className="technologie-skill__information">
+          <div className="information__card">
+            <h3>Mejores prácticas</h3>
+            <p>Prácticas estandarizadas para el desarrollo de software.</p>
+          </div>
+          <div className="information__card">
+            <h3>Diseño adaptativo</h3>
+            <p>A</p>
+          </div>
+          <div className="information__card">
+            <h3>Desarrollo estandarizado</h3>
+            <p>E</p>
+          </div>
         </div>
       </section>
       <section className="projects-portfolio">Portafolio</section>

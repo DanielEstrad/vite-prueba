@@ -88,5 +88,5 @@ body {
 #root {
   display: flex;
   flex-direction: column;
-  /* gap: var(--main-grid-gap); */
+  gap: var(--main-grid-gap);
 }
