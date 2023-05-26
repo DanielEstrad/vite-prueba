@@ -7,14 +7,17 @@ import Perfil from "./Pages/Perfil";
 function App() {
   return (
     <>
-      <Navbar>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      {/* <Navbar>
         <Footer>
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/perfil" element={<Perfil />} /> */}
+            <Route path="/perfil" element={<Perfil />} />
           </Routes>
         </Footer>
-      </Navbar>
+      </Navbar> */}
     </>
   );
 }

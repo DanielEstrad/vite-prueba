@@ -1,4 +1,4 @@
-nav {
+/* nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -11,3 +11,4 @@ nav {
   height: 25px;
   color: white;
 }
+ */

@@ -1,15 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"); */
+
+@font-face {
+  font-family: n27;
+  src: url(Fonts/n27-regular-webfont.ttf);
+}
 
 :root {
   --bg-very-dark: hsl(240, 20%, 98%);
   --font-main-color: hsl(240, 2%, 19%);
   --font-seconday-color: hsl(240, 1%, 56%);
-  --green-gradient: linear-gradient(
-    357deg,
-    rgba(132, 155, 134, 1) 0%,
-    #5b8170 50%,
-    rgba(48, 104, 94, 1) 100%
-  );
+  --green-gradient: linear-gradient(357deg,
+      rgba(132, 155, 134, 1) 0%,
+      #5b8170 50%,
+      rgba(48, 104, 94, 1) 100%);
 
   --navbar-height: 5vh;
   --main-grid-gap: 1rem;
@@ -23,12 +26,14 @@
 *::after {
   box-sizing: border-box;
 }
+
 /*
   2. Remove default margin
 */
 * {
   margin: 0;
 }
+
 /*
   3. Allow percentage-based heights in the application
 */
@@ -36,6 +41,7 @@ html,
 body {
   height: 100%;
 }
+
 /*
   Typographic tweaks!
   4. Add accessible line-height
@@ -44,7 +50,9 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: n27;
 }
+
 /*
   6. Improve media defaults
 */
@@ -56,6 +64,7 @@ svg {
   display: block;
   max-width: 100%;
 }
+
 /*
   7. Remove built-in form typography styles
 */
@@ -65,6 +74,7 @@ textarea,
 select {
   font: inherit;
 }
+
 /*
   8. Avoid text overflows
 */
@@ -81,7 +91,7 @@ h6 {
 body {
   background-color: var(--bg-very-dark);
   color: var(--bg-almost-white);
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   overflow-x: hidden;
 }
 
